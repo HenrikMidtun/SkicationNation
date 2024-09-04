@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_589a7128901e89cbc326c5727b00114e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_589a7128901e89cbc326c5727b00114e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_589a7128901e89cbc326c5727b00114e = L.map(
+                "map_589a7128901e89cbc326c5727b00114e",
+                {
+                    center: [46.8, 8.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_774767bffd8e82c3cbb1457f43b239fd = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_589a7128901e89cbc326c5727b00114e);
+        
+    
+            var marker_75712b62f92b6047e5bd974f5ebc24ba = L.marker(
+                [45.3244, 6.5383],
+                {}
+            ).addTo(map_589a7128901e89cbc326c5727b00114e);
+        
+    
+        var popup_dd7a4bf95e6e7f0bacb7025401c8a35e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0993c00ceb2a2a22a2cd98899995d35e = $(`<div id="html_0993c00ceb2a2a22a2cd98899995d35e" style="width: 100.0%; height: 100.0%;">Les Menuires, France</div>`)[0];
+            popup_dd7a4bf95e6e7f0bacb7025401c8a35e.setContent(html_0993c00ceb2a2a22a2cd98899995d35e);
+        
+
+        marker_75712b62f92b6047e5bd974f5ebc24ba.bindPopup(popup_dd7a4bf95e6e7f0bacb7025401c8a35e)
+        ;
+
+        
+    
+    
+            var marker_4814bb463d5ff5dce67ecbb36328c679 = L.marker(
+                [42.2722, 23.6031],
+                {}
+            ).addTo(map_589a7128901e89cbc326c5727b00114e);
+        
+    
+        var popup_0035ae011b92480deb31af06b3df5491 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bdf4177c310af196594b990f793fbf6b = $(`<div id="html_bdf4177c310af196594b990f793fbf6b" style="width: 100.0%; height: 100.0%;">Borovets, Bulgaria</div>`)[0];
+            popup_0035ae011b92480deb31af06b3df5491.setContent(html_bdf4177c310af196594b990f793fbf6b);
+        
+
+        marker_4814bb463d5ff5dce67ecbb36328c679.bindPopup(popup_0035ae011b92480deb31af06b3df5491)
+        ;
+
+        
+    
+    
+            var marker_49c048600e9cd60b23d655d4fa8ce1ea = L.marker(
+                [46.2742, 13.8254],
+                {}
+            ).addTo(map_589a7128901e89cbc326c5727b00114e);
+        
+    
+        var popup_00d26d06550625d97c6abec74b024db4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb0482e727d8ac41b8c597e84c320eb9 = $(`<div id="html_eb0482e727d8ac41b8c597e84c320eb9" style="width: 100.0%; height: 100.0%;">Vogel-Bohinj, Slovenia</div>`)[0];
+            popup_00d26d06550625d97c6abec74b024db4.setContent(html_eb0482e727d8ac41b8c597e84c320eb9);
+        
+
+        marker_49c048600e9cd60b23d655d4fa8ce1ea.bindPopup(popup_00d26d06550625d97c6abec74b024db4)
+        ;
+
+        
+    
+    
+            var marker_9146a369b44f39a522598a248e4c6433 = L.marker(
+                [46.5405, 10.2065],
+                {}
+            ).addTo(map_589a7128901e89cbc326c5727b00114e);
+        
+    
+        var popup_d0da0c2647d083dad2873e6afcc3d93f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e34fb46825b3e65f9310b514936c891d = $(`<div id="html_e34fb46825b3e65f9310b514936c891d" style="width: 100.0%; height: 100.0%;">Livigno, Italy</div>`)[0];
+            popup_d0da0c2647d083dad2873e6afcc3d93f.setContent(html_e34fb46825b3e65f9310b514936c891d);
+        
+
+        marker_9146a369b44f39a522598a248e4c6433.bindPopup(popup_d0da0c2647d083dad2873e6afcc3d93f)
+        ;
+
+        
+    
+    
+            var marker_c60933de5d27a84ee0f25a5da1acf3a5 = L.marker(
+                [42.5725, 1.4842],
+                {}
+            ).addTo(map_589a7128901e89cbc326c5727b00114e);
+        
+    
+        var popup_eb713287c01e12492c70f53f3d9ec503 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04414c41ac2b9cd13605a9b5eac3f40d = $(`<div id="html_04414c41ac2b9cd13605a9b5eac3f40d" style="width: 100.0%; height: 100.0%;">Arinsal, Andorra</div>`)[0];
+            popup_eb713287c01e12492c70f53f3d9ec503.setContent(html_04414c41ac2b9cd13605a9b5eac3f40d);
+        
+
+        marker_c60933de5d27a84ee0f25a5da1acf3a5.bindPopup(popup_eb713287c01e12492c70f53f3d9ec503)
+        ;
+
+        
+    
+    
+            var marker_480f622e4d0ac15f190af830d3fcfe4f = L.marker(
+                [47.0134, 10.2883],
+                {}
+            ).addTo(map_589a7128901e89cbc326c5727b00114e);
+        
+    
+        var popup_64d89b27a34759bc51f563b6443803e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_74d3bb4411cf435b19ce32ae2b2a5790 = $(`<div id="html_74d3bb4411cf435b19ce32ae2b2a5790" style="width: 100.0%; height: 100.0%;">Ischgl, Austria</div>`)[0];
+            popup_64d89b27a34759bc51f563b6443803e1.setContent(html_74d3bb4411cf435b19ce32ae2b2a5790);
+        
+
+        marker_480f622e4d0ac15f190af830d3fcfe4f.bindPopup(popup_64d89b27a34759bc51f563b6443803e1)
+        ;
+
+        
+    
+</script>
+</html>

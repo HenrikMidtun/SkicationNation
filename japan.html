@@ -1,0 +1,450 @@
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <script>
+        L_NO_TOUCH = false;
+        L_DISABLE_3D = false;
+    </script>
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <style>
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css">
+
+    <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style>
+        #map_160a29d081f082fdde1e1163368803bd {
+            position: relative;
+            width: 100.0%;
+            height: 100.0%;
+            left: 0.0%;
+            top: 0.0%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="folium-map leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+        id="map_160a29d081f082fdde1e1163368803bd" tabindex="0" style="outline: none;">
+        <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
+            <div class="leaflet-pane leaflet-tile-pane">
+                <div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+                    <div class="leaflet-tile-container leaflet-zoom-animated"
+                        style="z-index: 17; transform: translate3d(457px, 185px, 0px) scale(0.5);"></div>
+                    <div class="leaflet-tile-container leaflet-zoom-animated"
+                        style="z-index: 18; transform: translate3d(457px, 184px, 0px) scale(1);">
+                        <img alt="" role="presentation" src="https://b.tile.openstreetmap.org/8/226/99.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(187px, 106px, 0px); opacity: 1;">
+                        <img alt="" role="presentation" src="https://c.tile.openstreetmap.org/8/227/99.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(443px, 106px, 0px); opacity: 1;">
+                        <img alt="" role="presentation" src="https://a.tile.openstreetmap.org/8/226/98.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(187px, -150px, 0px); opacity: 1;"><img alt=""
+                            role="presentation" src="https://b.tile.openstreetmap.org/8/227/98.png" class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(443px, -150px, 0px); opacity: 1;"><img alt=""
+                            role="presentation" src="https://c.tile.openstreetmap.org/8/226/100.png" class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(187px, 362px, 0px); opacity: 1;"><img alt=""
+                            role="presentation" src="https://a.tile.openstreetmap.org/8/227/100.png" class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(443px, 362px, 0px); opacity: 1;"><img alt=""
+                            role="presentation" src="https://a.tile.openstreetmap.org/8/225/99.png" class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(-69px, 106px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://a.tile.openstreetmap.org/8/228/99.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(699px, 106px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://c.tile.openstreetmap.org/8/225/98.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(-69px, -150px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://c.tile.openstreetmap.org/8/228/98.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(699px, -150px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://b.tile.openstreetmap.org/8/225/100.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(-69px, 362px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://b.tile.openstreetmap.org/8/228/100.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(699px, 362px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://c.tile.openstreetmap.org/8/226/97.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(187px, -406px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://a.tile.openstreetmap.org/8/227/97.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(443px, -406px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://a.tile.openstreetmap.org/8/226/101.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(187px, 618px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://b.tile.openstreetmap.org/8/227/101.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(443px, 618px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://b.tile.openstreetmap.org/8/225/97.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(-69px, -406px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://b.tile.openstreetmap.org/8/228/97.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(699px, -406px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://c.tile.openstreetmap.org/8/224/99.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(-325px, 106px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://b.tile.openstreetmap.org/8/229/99.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(955px, 106px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://c.tile.openstreetmap.org/8/225/101.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(-69px, 618px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://c.tile.openstreetmap.org/8/228/101.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(699px, 618px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://b.tile.openstreetmap.org/8/224/98.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(-325px, -150px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://a.tile.openstreetmap.org/8/229/98.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(955px, -150px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://a.tile.openstreetmap.org/8/224/100.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(-325px, 362px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://c.tile.openstreetmap.org/8/229/100.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(955px, 362px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://a.tile.openstreetmap.org/8/224/97.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(-325px, -406px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://c.tile.openstreetmap.org/8/229/97.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(955px, -406px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://b.tile.openstreetmap.org/8/224/101.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(-325px, 618px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://a.tile.openstreetmap.org/8/229/101.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(955px, 618px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://b.tile.openstreetmap.org/8/223/99.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(-581px, 106px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://c.tile.openstreetmap.org/8/230/99.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(1211px, 106px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://a.tile.openstreetmap.org/8/223/98.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(-581px, -150px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://b.tile.openstreetmap.org/8/230/98.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(1211px, -150px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://c.tile.openstreetmap.org/8/223/100.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(-581px, 362px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://a.tile.openstreetmap.org/8/230/100.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(1211px, 362px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://c.tile.openstreetmap.org/8/223/97.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(-581px, -406px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://a.tile.openstreetmap.org/8/230/97.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(1211px, -406px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://a.tile.openstreetmap.org/8/223/101.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(-581px, 618px, 0px); opacity: 1;"><img
+                            alt="" role="presentation" src="https://b.tile.openstreetmap.org/8/230/101.png"
+                            class="leaflet-tile leaflet-tile-loaded"
+                            style="width: 256px; height: 256px; transform: translate3d(1211px, 618px, 0px); opacity: 1;">
+                    </div>
+                </div>
+            </div>
+            <div class="leaflet-pane leaflet-shadow-pane"><img
+                    src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/images/marker-shadow.png"
+                    class="leaflet-marker-shadow leaflet-zoom-animated"
+                    style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(1167px, -924px, 0px);"
+                    alt=""><img src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/images/marker-shadow.png"
+                    class="leaflet-marker-shadow leaflet-zoom-animated"
+                    style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(653px, 523px, 0px);"
+                    alt=""><img src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/images/marker-shadow.png"
+                    class="leaflet-marker-shadow leaflet-zoom-animated"
+                    style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(1476px, -1058px, 0px);"
+                    alt=""><img src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/images/marker-shadow.png"
+                    class="leaflet-marker-shadow leaflet-zoom-animated"
+                    style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(759px, 472px, 0px);"
+                    alt=""><img src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/images/marker-shadow.png"
+                    class="leaflet-marker-shadow leaflet-zoom-animated"
+                    style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(770px, 516px, 0px);"
+                    alt=""><img src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/images/marker-shadow.png"
+                    class="leaflet-marker-shadow leaflet-zoom-animated"
+                    style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(711px, 477px, 0px);"
+                    alt=""><img src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/images/marker-shadow.png"
+                    class="leaflet-marker-shadow leaflet-zoom-animated"
+                    style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(1114px, 186px, 0px);"
+                    alt=""></div>
+            <div class="leaflet-pane leaflet-overlay-pane"></div>
+            <div class="leaflet-pane leaflet-marker-pane"><img
+                    src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/images/marker-icon-2x.png"
+                    class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+                    style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(1167px, -924px, 0px); z-index: -924;"
+                    alt="" tabindex="0"><img
+                    src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/images/marker-icon-2x.png"
+                    class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+                    style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(653px, 523px, 0px); z-index: 523;"
+                    alt="" tabindex="0"><img
+                    src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/images/marker-icon-2x.png"
+                    class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+                    style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(1476px, -1058px, 0px); z-index: -1058;"
+                    alt="" tabindex="0"><img
+                    src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/images/marker-icon-2x.png"
+                    class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+                    style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(759px, 472px, 0px); z-index: 472;"
+                    alt="" tabindex="0"><img
+                    src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/images/marker-icon-2x.png"
+                    class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+                    style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(770px, 516px, 0px); z-index: 516;"
+                    alt="" tabindex="0"><img
+                    src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/images/marker-icon-2x.png"
+                    class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+                    style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(711px, 477px, 0px); z-index: 477;"
+                    alt="" tabindex="0"><img
+                    src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/images/marker-icon-2x.png"
+                    class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive"
+                    style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(1114px, 186px, 0px); z-index: 186;"
+                    alt="" tabindex="0"></div>
+            <div class="leaflet-pane leaflet-tooltip-pane"></div>
+            <div class="leaflet-pane leaflet-popup-pane"></div>
+            <div class="leaflet-proxy leaflet-zoom-animated"
+                style="transform: translate3d(58065.9px, 25467.1px, 0px) scale(128);"></div>
+        </div>
+        <div class="leaflet-control-container">
+            <div class="leaflet-top leaflet-left">
+                <div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in"
+                        href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a
+                        class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button"
+                        aria-label="Zoom out">−</a></div>
+            </div>
+            <div class="leaflet-top leaflet-right"></div>
+            <div class="leaflet-bottom leaflet-left"></div>
+            <div class="leaflet-bottom leaflet-right">
+                <div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com"
+                        title="A JS library for interactive maps">Leaflet</a> | Data by © <a
+                        href="http://openstreetmap.org">OpenStreetMap</a>, under <a
+                        href="http://www.openstreetmap.org/copyright">ODbL</a>.</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+
+        var map_160a29d081f082fdde1e1163368803bd = L.map(
+            "map_160a29d081f082fdde1e1163368803bd",
+            {
+                center: [36.5, 138.0],
+                crs: L.CRS.EPSG3857,
+                zoom: 6,
+                zoomControl: true,
+                preferCanvas: false,
+            }
+        );
+
+
+
+
+
+        var tile_layer_2e603f32c6f6150007bfc84934b2c1d4 = L.tileLayer(
+            "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+            { "attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false }
+        ).addTo(map_160a29d081f082fdde1e1163368803bd);
+
+
+        var marker_a2427628c6a8774d5fa19876974cd336 = L.marker(
+            [42.8048, 140.6878],
+            {}
+        ).addTo(map_160a29d081f082fdde1e1163368803bd);
+
+
+        var popup_337bdf607369345baa520c4b47064bf1 = L.popup({ "maxWidth": "100%" });
+
+
+        var html_56c3a25f0ccc043121a9d42877ed7ebc = $(`<div id="html_56c3a25f0ccc043121a9d42877ed7ebc" style="width: 100.0%; height: 100.0%;">Niseko, Hokkaido</div>`)[0];
+        popup_337bdf607369345baa520c4b47064bf1.setContent(html_56c3a25f0ccc043121a9d42877ed7ebc);
+
+
+        marker_a2427628c6a8774d5fa19876974cd336.bindPopup(popup_337bdf607369345baa520c4b47064bf1)
+            ;
+
+
+
+
+        var marker_f56c0cdf1d1d30560c8019307c36cb28 = L.marker(
+            [36.6987, 137.8616],
+            {}
+        ).addTo(map_160a29d081f082fdde1e1163368803bd);
+
+
+        var popup_24c5eebf173665d82afd4716e2a1874b = L.popup({ "maxWidth": "100%" });
+
+
+        var html_57bff03f0eb3d5a7c0d6208bb34e78e4 = $(`<div id="html_57bff03f0eb3d5a7c0d6208bb34e78e4" style="width: 100.0%; height: 100.0%;">Hakuba Valley, Nagano</div>`)[0];
+        popup_24c5eebf173665d82afd4716e2a1874b.setContent(html_57bff03f0eb3d5a7c0d6208bb34e78e4);
+
+
+        marker_f56c0cdf1d1d30560c8019307c36cb28.bindPopup(popup_24c5eebf173665d82afd4716e2a1874b)
+            ;
+
+
+
+
+        var marker_9ec99e71828fad0043e72196bebebeae = L.marker(
+            [43.3422, 142.3855],
+            {}
+        ).addTo(map_160a29d081f082fdde1e1163368803bd);
+
+
+        var popup_5cad19748a4b5554b90e5f5463094191 = L.popup({ "maxWidth": "100%" });
+
+
+        var html_eaf4a59a23d47381858260a2812599e1 = $(`<div id="html_eaf4a59a23d47381858260a2812599e1" style="width: 100.0%; height: 100.0%;">Furano, Hokkaido</div>`)[0];
+        popup_5cad19748a4b5554b90e5f5463094191.setContent(html_eaf4a59a23d47381858260a2812599e1);
+
+
+        marker_9ec99e71828fad0043e72196bebebeae.bindPopup(popup_5cad19748a4b5554b90e5f5463094191)
+            ;
+
+
+
+
+        var marker_4f7a1dd8d0d6f778db6f19a8b95662eb = L.marker(
+            [36.9226, 138.4419],
+            {}
+        ).addTo(map_160a29d081f082fdde1e1163368803bd);
+
+
+        var popup_641f7ceae138f16a6dd4f41971f55053 = L.popup({ "maxWidth": "100%" });
+
+
+        var html_9c3d07c03c3aa670cb1846ee4a1d72d3 = $(`<div id="html_9c3d07c03c3aa670cb1846ee4a1d72d3" style="width: 100.0%; height: 100.0%;">Nozawa Onsen, Nagano</div>`)[0];
+        popup_641f7ceae138f16a6dd4f41971f55053.setContent(html_9c3d07c03c3aa670cb1846ee4a1d72d3);
+
+
+        marker_4f7a1dd8d0d6f778db6f19a8b95662eb.bindPopup(popup_641f7ceae138f16a6dd4f41971f55053)
+            ;
+
+
+
+
+        var marker_530e36261014dbedca1dd02efd73846d = L.marker(
+            [36.7314, 138.5057],
+            {}
+        ).addTo(map_160a29d081f082fdde1e1163368803bd);
+
+
+        var popup_41f26a8aacbd648dc885316126e51177 = L.popup({ "maxWidth": "100%" });
+
+
+        var html_a76e7890576fb5c0efb5ab35e2a1eb46 = $(`<div id="html_a76e7890576fb5c0efb5ab35e2a1eb46" style="width: 100.0%; height: 100.0%;">Shiga Kogen, Nagano</div>`)[0];
+        popup_41f26a8aacbd648dc885316126e51177.setContent(html_a76e7890576fb5c0efb5ab35e2a1eb46);
+
+
+        marker_530e36261014dbedca1dd02efd73846d.bindPopup(popup_41f26a8aacbd648dc885316126e51177)
+            ;
+
+
+
+
+        var marker_de7a9e0602dce07c539e5d05f768611b = L.marker(
+            [36.9004, 138.183],
+            {}
+        ).addTo(map_160a29d081f082fdde1e1163368803bd);
+
+
+        var popup_b369aeaacfb84006ae887dcf15a14362 = L.popup({ "maxWidth": "100%" });
+
+
+        var html_0e6adb574c2cefa4f0e7cd46425e5bad = $(`<div id="html_0e6adb574c2cefa4f0e7cd46425e5bad" style="width: 100.0%; height: 100.0%;">Myoko Kogen, Niigata</div>`)[0];
+        popup_b369aeaacfb84006ae887dcf15a14362.setContent(html_0e6adb574c2cefa4f0e7cd46425e5bad);
+
+
+        marker_de7a9e0602dce07c539e5d05f768611b.bindPopup(popup_b369aeaacfb84006ae887dcf15a14362)
+            ;
+
+
+
+
+        var marker_26c71646ce7d40713815edc6c28db726 = L.marker(
+            [38.1688, 140.393],
+            {}
+        ).addTo(map_160a29d081f082fdde1e1163368803bd);
+
+
+        var popup_4bd7a275b4188309eb72c689355f6b0a = L.popup({ "maxWidth": "100%" });
+
+
+        var html_9ef1fcb97d04b05307019aa9228946a4 = $(`<div id="html_9ef1fcb97d04b05307019aa9228946a4" style="width: 100.0%; height: 100.0%;">Zao Onsen, Yamagata</div>`)[0];
+        popup_4bd7a275b4188309eb72c689355f6b0a.setContent(html_9ef1fcb97d04b05307019aa9228946a4);
+
+
+        marker_26c71646ce7d40713815edc6c28db726.bindPopup(popup_4bd7a275b4188309eb72c689355f6b0a)
+            ;
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1,
+            accessToken: 'your.mapbox.access.token',
+            language: 'no' // Norwegian language option
+        }).addTo(map);
+
+        var i18n = new L.I18n({
+            lng: 'no', // Set default language to Norwegian
+            resources: {
+                no: {
+                    translation: {
+                        "Niseko": "Niseko på norsk",
+                        "Hakuba Valley": "Hakuba-dalen",
+                        // Other translations
+                    }
+                },
+                en: {
+                    translation: {
+                        "Niseko": "Niseko, Hokkaido",
+                        "Hakuba Valley": "Hakuba Valley, Nagano",
+                        // Other translations
+                    }
+                }
+            }
+        });
+        L.marker([42.8048, 140.6878]).addTo(map)
+            .bindPopup(i18n.t('Niseko'))
+            .openPopup();
+
+    </script>
+</body>
